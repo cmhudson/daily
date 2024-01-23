@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\hudson\\Code\\daily\\daily.csproj": {}
+    "C:\\Users\\excde\\code\\c#\\daily\\daily.csproj": {}
   },
   "projects": {
-    "c:\\Users\\hudson\\Code\\daily\\daily.csproj": {
+    "C:\\Users\\excde\\code\\c#\\daily\\daily.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\hudson\\Code\\daily\\daily.csproj",
+        "projectUniqueName": "C:\\Users\\excde\\code\\c#\\daily\\daily.csproj",
         "projectName": "daily",
-        "projectPath": "c:\\Users\\hudson\\Code\\daily\\daily.csproj",
-        "packagesPath": "C:\\Users\\hudson\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\hudson\\Code\\daily\\obj\\",
+        "projectPath": "C:\\Users\\excde\\code\\c#\\daily\\daily.csproj",
+        "packagesPath": "C:\\Users\\excde\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\excde\\code\\c#\\daily\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hudson\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\excde\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
