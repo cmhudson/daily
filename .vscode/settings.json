@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2c185824-adea-4bf8-b7a3-89afae1083db/resourceGroups/daily_rg/providers/Microsoft.Web/sites/apifordailyapp",
+    "appService.deploySubpath": "bin\\Publish"
+}

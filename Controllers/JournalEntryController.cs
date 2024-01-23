@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using daily.Models;
+using System.Collections;
 
 namespace daily.Controllers
 {
@@ -39,6 +40,19 @@ namespace daily.Controllers
             }
 
             return journalEntry;
+        }
+
+        
+        // GET: api/JournalEntry/User/1
+        [HttpGet("/api/JournalEntry/User/{userId}")]
+        public async Task<ActionResult<IEnumerable<JournalEntry>>> GetEntriesForUser(long userId)
+        {
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null) {
+                return NotFound();
+            }
+            return user.JournalEntries.ToList();
+        
         }
 
         // PUT: api/JournalEntry/5

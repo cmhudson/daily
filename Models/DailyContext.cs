@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using daily.Models;
 
 namespace daily.Models;
 
@@ -9,5 +10,7 @@ public class DailyContext : DbContext
 
     }
 
+    public DbSet<User> Users {get;set;} = null!;
     public DbSet<JournalEntry> JournalEntries { get; set; }  = null!;
+
 }
