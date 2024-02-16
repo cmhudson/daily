@@ -34,3 +34,8 @@ Models:
 - POST api/JournalEntry
 - PUT api/JournalEntry
 - DELETE api/JournalEntry
+
+**Commands**
+
+run: dotnet run --launch-profile https
+publish: dotnet publish -c Release -o ./bin/Publish
