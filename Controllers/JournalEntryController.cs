@@ -51,6 +51,7 @@ namespace daily.Controllers
             if (user == null) {
                 return NotFound();
             }
+            Console.WriteLine(user);
             return user.JournalEntries.ToList();
         
         }

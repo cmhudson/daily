@@ -39,3 +39,6 @@ Models:
 
 run: dotnet run --launch-profile https
 publish: dotnet publish -c Release -o ./bin/Publish
+create initial migrations: dotnet ef migrations add InitialCreate -v
+prereq: dotnet tool install --global dotnet-ef
+run migrations: dotnet ef database update

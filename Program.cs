@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<DailyContext>(opt => opt.UseInMemoryDatabase("daily"));
+builder.Services.AddDbContext<DailyContext>(opt => opt.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
