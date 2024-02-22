@@ -41,6 +41,19 @@ namespace daily.Controllers
             return user;
         }
 
+        // GET: api/Users/5/Entries
+        [HttpGet("/api/Users/{id}/Entries")]
+        public async Task<ActionResult<IEnumerable<JournalEntry>>> GetUserEntries(long id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) {
+                    return NotFound();
+            }
+
+            var entries = from e in _context.JournalEntries where e.User.Id.Equals(user.Id) select e;
+            return entries.ToArray();
+        }
+
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -103,5 +116,7 @@ namespace daily.Controllers
         {
             return _context.Users.Any(e => e.Id == id);
         }
+
+
     }
 }
